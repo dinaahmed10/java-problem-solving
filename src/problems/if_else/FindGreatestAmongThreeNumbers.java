@@ -12,15 +12,11 @@ public class FindGreatestAmongThreeNumbers {
         System.out.print("Please enter the first number:");
         int Number3= input.nextInt();
 
-        if(Number1>Number2 &&Number1>Number3){
-            System.out.println("The greatest number is: " + Number1);
-        }
-        else if(Number2>Number1 &&Number2>Number3){
-            System.out.println("The greatest number is: " + Number2);
-        }
-        else{
-            System.out.println("The greatest number is: " + Number3);
-        }
+        int greatest = Number1;
+        if (Number2 > greatest) greatest = Number2;
+        if (Number3 > greatest) greatest = Number3;
+
+        System.out.println("The greatest number is: " + greatest);
     }
 
 }
