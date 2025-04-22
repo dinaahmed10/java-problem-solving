@@ -13,8 +13,10 @@ public class FindGreatestAmongThreeNumbers {
         int Number3= input.nextInt();
 
         int greatest = Number1;
-        if (Number2 > greatest) greatest = Number2;
-        if (Number3 > greatest) greatest = Number3;
+        if (Number2 > greatest)
+            greatest = Number2;
+        if (Number3 > greatest)
+            greatest = Number3;
 
         System.out.println("The greatest number is: " + greatest);
     }
